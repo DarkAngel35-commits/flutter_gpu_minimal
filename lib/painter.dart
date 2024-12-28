@@ -24,7 +24,7 @@ class MyGpuPainter extends CustomPainter {
     commandBuffer.submit();
 
     final image = texture.asImage();
-    canvas.drawImage(image, Offset.zero, Paint()..color = Colors.white);
+    canvas.drawImage(image, Offset.zero, Paint());
   }
 
   @override
