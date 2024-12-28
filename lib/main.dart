@@ -17,7 +17,7 @@ class MainApp extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border.all(color: Colors.white, width: 2),
         ),
-        child: CustomPaint(painter: TrianglePainter()),
+        child: CustomPaint(painter: MyGpuPainter()),
       ),
     );
   }

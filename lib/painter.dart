@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gpu/gpu.dart' as gpu;
 import 'package:vector_math/vector_math.dart' as vecmat;
 
-class TrianglePainter extends CustomPainter {
+class MyGpuPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final texture =
@@ -28,5 +28,5 @@ class TrianglePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant TrianglePainter oldDelegate) => true;
+  bool shouldRepaint(covariant MyGpuPainter oldDelegate) => true;
 }
